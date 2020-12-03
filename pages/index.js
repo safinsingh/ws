@@ -34,6 +34,7 @@ export default function Home(props) {
 					integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
 					crossOrigin="anonymous"
 				/>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			</Head>
 			<h1>SAFIN SINGH</h1>
 			<a className="socials" href="https://twitter.com/safinsingh">

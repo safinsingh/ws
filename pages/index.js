@@ -11,16 +11,19 @@ export default function Home(props) {
 	const [cursorPosTwo, setCursorPosTwo] = useState([0, 0])
 
 	useEffect(() => {
+		let laggedTimeout
+
 		const move = (e) => {
 			setCursorPos([e.clientX - 3, e.clientY - 3])
 			setTimeout(() => {
-				setCursorPosTwo([e.clientX - 15, e.clientY - 15])
+				laggedTimeout = setCursorPosTwo([e.clientX - 15, e.clientY - 15])
 			}, 100)
 		}
 		window.addEventListener('mousemove', move)
 
 		return () => {
 			window.removeEventListener('mousemove', move)
+			clearTimeout(laggedTimeout)
 		}
 	}, [])
 

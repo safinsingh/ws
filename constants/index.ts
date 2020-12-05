@@ -4,26 +4,26 @@ export const socials = {
 	LINKEDIN: 'https://linkedin.com/in/safinsingh/'
 }
 
-export const gqlQuery = `query {
+const omitTabs = (input: string) => {
+	return input.replace(/\t/g, '')
+}
+
+export const gqlQuery = omitTabs(`query {
 	repositoryOwner(login: "safinsingh") {
-	  ... on ProfileOwner {
-		 pinnedItemsRemaining
-		 itemShowcase {
-			items(first: 6) {
-			  edges {
-				 node {
-					... on Repository {
-					  name
-					  description
-					  url
-					  primaryLanguage {
-						 name
-					  }
+		... on ProfileOwner {
+		pinnedItemsRemaining
+			itemShowcase {
+				items(first: 6) {
+					edges {
+						node {
+							...on Repository {
+								name
+								url
+							}
+						}
 					}
-				 }
-			  }
+				}
 			}
-		 }
-	  }
+		}
 	}
-}`
+}`)

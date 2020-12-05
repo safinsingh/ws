@@ -5,12 +5,12 @@ const customResolves = {
 	resolve: {
 		alias: {
 			'~/css': resolve('./styles/globals.css'),
-			'~/constants': resolve('./src/constants'),
-			'~/hooks': resolve('./src/hooks'),
-			'~/lib': resolve('./src/lib'),
-			'~/seo': resolve('./src/seo'),
-			'~/types': resolve('./src/types'),
-			'~/ui': resolve('./src/ui'),
+			'~/constants': resolve('./constants'),
+			'~/hooks': resolve('./hooks'),
+			'~/seo': resolve('./seo'),
+			'~/api': resolve('./pages/api'),
+			'~/types': resolve('./types'),
+			'~/ui': resolve('./ui'),
 			'~/prelude': resolve('./src/prelude.ts')
 		}
 	}

@@ -12,7 +12,11 @@ const Projects = ({ projects }: ProjectArr) => {
 	return (
 		<>
 			{sortNodes(projects).map((project: Project) => (
-				<a href={project.node.url} className="projects">
+				<a
+					href={project.node.url}
+					key={project.node.url}
+					className="projects"
+				>
 					{project.node.name}
 				</a>
 			))}

@@ -18,7 +18,7 @@
 			"~/css": ["./styles/globals.css"],
 			"~/constants": ["./constants"],
 			"~/hooks": ["./hooks"],
-			"~/lib": ["./lib"],
+			"~/api": ["./pages/api"],
 			"~/seo": ["./seo"],
 			"~/types": ["./types"],
 			"~/ui": ["./ui"],

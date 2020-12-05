@@ -9,6 +9,8 @@ import {
 	useMouse
 } from '~/prelude'
 
+const getServerSideProps = async () => graphql()
+
 const Home = (props: ProjectArr) => {
 	const { projects } = props
 	const [cursorPosOne, cursorPosTwo] = useMouse()
@@ -28,6 +30,5 @@ const Home = (props: ProjectArr) => {
 	)
 }
 
-export const getServerSideProps = async () => graphql()
-
+export { getServerSideProps }
 export default Home

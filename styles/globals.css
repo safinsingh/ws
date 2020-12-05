@@ -5,6 +5,11 @@
 	font-style: normal;
 }
 
+* {
+	box-sizing: border-box;
+	cursor: none;
+}
+
 html,
 body {
 	margin: 0;
@@ -36,53 +41,46 @@ footer {
 	left: 2rem;
 }
 
-a.projects {
+a {
 	color: inherit;
 	text-decoration: underline;
+}
+
+a.projects {
 	margin-top: 0.7rem;
 	display: table;
 }
 
 a.socials {
-	color: inherit;
-	text-decoration: underline;
 	font-size: 1rem;
 	display: inline-block;
-	margin-right: 0.5rem;
-	margin-top: 0.7rem;
-	margin-bottom: 1.1rem;
+	margin: 0.7rem 0.5rem 1.1rem 0rem;
 }
 
-.cursorOne {
-	pointer-events: none;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: #fafafa;
-	height: 6px;
-	width: 6px;
-	border-radius: 3px;
-	z-index: 9999;
-	transition: height 0.5s, width 0.5s;
-}
-
+.cursorOne,
 .cursorTwo {
 	pointer-events: none;
 	position: absolute;
 	top: 0;
 	left: 0;
+	transition: height 0.5s, width 0.5s;
+}
+
+.cursorOne {
+	background-color: #fafafa;
+	height: 6px;
+	width: 6px;
+	border-radius: 3px;
+	z-index: 9999;
+}
+
+.cursorTwo {
 	background-color: transparent;
 	border: 1px solid #fafafa;
 	height: 30px;
 	width: 30px;
 	border-radius: 15px;
 	z-index: 1;
-	transition: height 0.5s, width 0.5s;
-}
-
-* {
-	box-sizing: border-box;
-	cursor: none;
 }
 
 a:hover ~ .cursorTwo {
@@ -101,10 +99,12 @@ a:hover ~ .cursorOne {
 	.wrapper {
 		padding: 1.5rem;
 	}
+
 	footer {
 		bottom: 1.5rem;
 		left: 1.5rem;
 	}
+
 	.cursorOne,
 	.cursorTwo {
 		display: none;

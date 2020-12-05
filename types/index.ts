@@ -2,10 +2,6 @@ export interface Project {
 	node: {
 		url: string
 		name: string
-		primaryLanguage: {
-			name: string
-		}
-		description: string
 	}
 }
 
@@ -14,9 +10,7 @@ export interface ProjectArr {
 }
 
 export interface ProjectProps {
-	props: {
-		projects: Project[]
-	}
+	props: ProjectArr
 }
 
 export interface CursorProps {

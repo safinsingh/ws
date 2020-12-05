@@ -3,7 +3,7 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import { gqlQuery } from '~/constants'
 import { ProjectProps } from '~/types'
 
-export const graphql = async () => {
+const graphql = async () => {
 	const projects = await fetch('https://api.github.com/graphql', {
 		method: 'POST',
 		headers: {
@@ -29,4 +29,5 @@ const Handler = async (_req: NextApiRequest, res: NextApiResponse) => {
 	res.status(200).json((await graphql()).props.projects)
 }
 
+export { graphql }
 export default Handler

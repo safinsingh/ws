@@ -1,4 +1,4 @@
-export const socials = {
+const socials = {
 	TWITTER: 'https://twitter.com/safinsingh',
 	GITHUB: 'https://github.com/safinsingh/',
 	LINKEDIN: 'https://linkedin.com/in/safinsingh/'
@@ -6,16 +6,16 @@ export const socials = {
 
 const omitTabs = (input: string) => input.replace(/\t/g, '')
 
-export const gqlQuery = omitTabs(`
+const gqlQuery = omitTabs(`
 query {
 	repositoryOwner(login: "safinsingh") {
 		... on ProfileOwner {
-		pinnedItemsRemaining
+			pinnedItemsRemaining
 			itemShowcase {
 				items(first: 6) {
 					edges {
 						node {
-							...on Repository {
+							... on Repository {
 								name
 								url
 							}
@@ -28,7 +28,16 @@ query {
 }
 `)
 
-export const smallCursorOffset = 3
-export const largeCursorOffset = 15
-export const largeCursorFollowRate = 70
-export const cursorInitPos = 250
+const smallCursorOffset = 3
+const largeCursorOffset = 15
+const largeCursorFollowRate = 70
+const cursorInitPos = 250
+
+export {
+	socials,
+	gqlQuery,
+	smallCursorOffset,
+	largeCursorOffset,
+	largeCursorFollowRate,
+	cursorInitPos
+}

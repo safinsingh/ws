@@ -21,7 +21,7 @@ const Meta = () => {
 			{/* Open Graph */}
 			<meta
 				property="og:description"
-				content="Safin Singh. Web developer and cybersecurity competitor."
+				content="Web developer and cybersecurity competitor."
 			/>
 			<meta property="og:url" content="https://safin.dev" />
 			<meta property="og:type" content="website" />
@@ -37,13 +37,13 @@ const Meta = () => {
 			{/* Twitter */}
 			<meta
 				name="twitter:card"
-				content="Safin Singh. Web developer and cybersecurity competitor."
+				content="Web developer and cybersecurity competitor."
 			/>
 			<meta name="twitter:url" content="https://safin.dev" />
 			<meta name="twitter:title" content="Safin Singh" />
 			<meta
 				name="twitter:description"
-				content="Safin Singh. Web developer and cybersecurity competitor."
+				content="Web developer and cybersecurity competitor."
 			/>
 			<meta name="twitter:image" content="/logo.png" />
 
@@ -53,7 +53,7 @@ const Meta = () => {
 			<meta
 				name="description"
 				itemProp="description"
-				content="Safin Singh. Web developer and cybersecurity competitor."
+				content="Web developer and cybersecurity competitor."
 			/>
 
 			{/* Apple */}

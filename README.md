@@ -1,4 +1,4 @@
-# Portfolio ![lint](https://github.com/safinsingh/ws/workflows/lint/badge.svg) ![fmt](https://github.com/safinsingh/ws/workflows/fmt/badge.svg) ![build](https://github.com/safinsingh/ws/workflows/build/badge.svg)
+# Portfolio ![CI](https://github.com/safinsingh/ws/workflows/CI/badge.svg)
 
 My portfolio site, built with Next.js and TypeScript.
 

@@ -1,14 +1,11 @@
 import {
 	Cursor,
-	// Constants
 	graphql,
-	// Components
 	Meta,
 	ProjectArr,
 	Projects,
 	Socials,
 	socials,
-	// Hooks
 	useMouse
 } from '~/prelude'
 

@@ -1,20 +1,28 @@
 import { useEffect, useState } from 'react'
 
-const smallCursorOffset = 3
-const largeCursorOffset = 15
-const largeCursorFollowRate = 70
+import {
+	cursorInitPos,
+	largeCursorFollowRate,
+	largeCursorOffset,
+	smallCursorOffset
+} from '~/constants'
 
 const useMouse = () => {
-	const [cursorPosOne, setCursorPosOne] = useState([0, 0])
-	const [cursorPosTwo, setCursorPosTwo] = useState([0, 0])
+	const [cursorPosOne, setCursorPosOne] = useState([
+		cursorInitPos - smallCursorOffset,
+		cursorInitPos - smallCursorOffset
+	])
+	const [cursorPosTwo, setCursorPosTwo] = useState([
+		cursorInitPos - largeCursorOffset,
+		cursorInitPos - largeCursorOffset
+	])
 
 	useEffect(() => {
 		// So as not to include @types/node in dependencies
 		// rather than devDependencies
 		let laggedTimeout: any
 
-		// FIXME
-		const move = (e: any) => {
+		const move = (e: MouseEvent) => {
 			setCursorPosOne([
 				e.clientX - smallCursorOffset,
 				e.clientY - smallCursorOffset

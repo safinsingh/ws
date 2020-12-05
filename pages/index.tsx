@@ -28,8 +28,6 @@ const Home = (props: ProjectArr) => {
 	)
 }
 
-export const getServerSideProps = async () => {
-	return graphql()
-}
+export const getServerSideProps = async () => graphql()
 
 export default Home

@@ -25,6 +25,8 @@ export const graphql = async () => {
 	} as ProjectProps
 }
 
-export default async (req: NextApiRequest, res: NextApiResponse) => {
+const Handler = async (_req: NextApiRequest, res: NextApiResponse) => {
 	res.status(200).json((await graphql()).props.projects)
 }
+
+export default Handler

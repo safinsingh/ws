@@ -4,11 +4,10 @@ export const socials = {
 	LINKEDIN: 'https://linkedin.com/in/safinsingh/'
 }
 
-const omitTabs = (input: string) => {
-	return input.replace(/\t/g, '')
-}
+const omitTabs = (input: string) => input.replace(/\t/g, '')
 
-export const gqlQuery = omitTabs(`query {
+export const gqlQuery = omitTabs(`
+query {
 	repositoryOwner(login: "safinsingh") {
 		... on ProfileOwner {
 		pinnedItemsRemaining
@@ -26,4 +25,10 @@ export const gqlQuery = omitTabs(`query {
 			}
 		}
 	}
-}`)
+}
+`)
+
+export const smallCursorOffset = 3
+export const largeCursorOffset = 15
+export const largeCursorFollowRate = 70
+export const cursorInitPos = 250

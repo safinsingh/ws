@@ -16,14 +16,14 @@ const Home = (props: ProjectArr) => {
 	return (
 		<div className="wrapper">
 			<Meta />
-			<h1>SAFIN SINGH</h1>
+			<h1>safin singh</h1>
 			<Socials links={socials} />
-			<h2>WEB DEVELOPER &amp; CYBERSECURITY COMPETITOR.</h2>
-			<h3>I WRITE GOOD CODE. HERE’S SOME OF MY BEST WORK.</h3>
+			<h2>web developer &amp; cybersecurity competitor.</h2>
+			<h3>i write good code. here&apos;s some of my best work.</h3>
 			<Projects projects={projects} />
 			<Cursor n={1} state={cursorPosOne} />
 			<Cursor n={2} state={cursorPosTwo} />
-			<footer>&copy; SAFIN SINGH 2020</footer>
+			<footer>&copy; safin singh 2020</footer>
 		</div>
 	)
 }

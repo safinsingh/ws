@@ -16,6 +16,8 @@ body {
 	background-size: 300px;
 	background-color: #040404;
 	background-image: url('/bg.svg');
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 
 body,
@@ -37,6 +39,7 @@ footer {
 a.projects {
 	color: inherit;
 	text-decoration: underline;
+	text-decoration-style: dotted;
 	margin-top: 0.7rem;
 	display: table;
 }
@@ -44,6 +47,7 @@ a.projects {
 a.socials {
 	color: inherit;
 	text-decoration: underline;
+	text-decoration-style: dotted;
 	font-size: 1rem;
 	display: inline-block;
 	margin-right: 0.5rem;

@@ -39,7 +39,6 @@ footer {
 a.projects {
 	color: inherit;
 	text-decoration: underline;
-	text-decoration-style: dotted;
 	margin-top: 0.7rem;
 	display: table;
 }
@@ -47,7 +46,6 @@ a.projects {
 a.socials {
 	color: inherit;
 	text-decoration: underline;
-	text-decoration-style: dotted;
 	font-size: 1rem;
 	display: inline-block;
 	margin-right: 0.5rem;

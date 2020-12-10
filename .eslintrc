@@ -17,7 +17,12 @@
 		"ecmaVersion": 12,
 		"sourceType": "module"
 	},
-	"plugins": ["prettier", "react", "simple-import-sort", "@typescript-eslint"],
+	"plugins": [
+		"prettier",
+		"react",
+		"simple-import-sort",
+		"@typescript-eslint"
+	],
 	"rules": {
 		"react/react-in-jsx-scope": 0,
 		"react/jsx-filename-extension": 0,

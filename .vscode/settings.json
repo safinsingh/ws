@@ -3,6 +3,7 @@
 		"source.fixAll.eslint": true
 	},
 	"files.associations": {
-		".huskyrc": "json"
+		".huskyrc": "json",
+		"*.json": "json"
 	}
 }

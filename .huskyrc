@@ -1,5 +1,5 @@
 {
 	"hooks": {
-		"pre-commit": "yarn format:ci && yarn lint:ci"
+		"pre-commit": "npm run format:ci && npm run lint:ci"
 	}
 }
